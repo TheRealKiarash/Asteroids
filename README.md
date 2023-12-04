@@ -18,8 +18,10 @@ The BaseShooter is the base class for the PlayerShooter and SaucerShooter class,
 
 I implemented 3 manager classes to manage the game, all three implementing the singleton pattern:
 
-	GameManager: Controls lives and score and overall game state.
-	UIManager: Displays lives and score, and shows the Game Over screen when the player's lives run out.
-	Spawner: Keeps track of the level and the spawning of enemies. (Side Note: I contemplated using the factory pattern for the Spawner but I thought that would veer into over-engineering so I avoided that)
+GameManager: Controls lives and score and overall game state.
+
+UIManager: Displays lives and score, and shows the Game Over screen when the player's lives run out.
+
+Spawner: Keeps track of the level and the spawning of enemies. (Side Note: I contemplated using the factory pattern for the Spawner but I thought that would veer into over-engineering so I avoided that).
 
 and finally there was the ScreenWrapper component that I added to every object except the bullets in the game.
