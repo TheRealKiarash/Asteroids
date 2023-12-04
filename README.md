@@ -17,6 +17,7 @@ I also implemented saucers, and divided their functionality to Saucer and Saucer
 The BaseShooter is the base class for the PlayerShooter and SaucerShooter class, and they both implement a simple Bullet script which functions the same for both, with the difference of player and saucer bullets being only in the prefabs.
 
 I implemented 3 manager classes to manage the game, all three implementing the singleton pattern:
+
 	GameManager: Controls lives and score and overall game state.
 	UIManager: Displays lives and score, and shows the Game Over screen when the player's lives run out.
 	Spawner: Keeps track of the level and the spawning of enemies. (Side Note: I contemplated using the factory pattern for the Spawner but I thought that would veer into over-engineering so I avoided that)
